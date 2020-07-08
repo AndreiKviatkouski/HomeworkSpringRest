@@ -1,0 +1,43 @@
+POST  http://localhost:8080/user/reg
+Content-Type: application/json
+
+{
+"name": "Andrei",
+"login": "Andrei",
+"password": 123
+}
+
+###
+POST  http://localhost:8080/user/auth
+Content-Type: application/json
+
+{
+
+"login": "Andrei",
+"password": 123
+}
+
+###
+POST  http://localhost:8080/calc
+Content-Type: application/json
+
+{
+"num1": 10,
+"num2": 10,
+"operation": "sum"
+}
+
+###
+POST  http://localhost:8080/calc
+Content-Type: application/json
+
+{
+"num1": 10,
+"num2": 10,
+"operation": "div"
+}
+
+###
+GET  http://localhost:8080/calc
+Content-Type: application/json
+###
